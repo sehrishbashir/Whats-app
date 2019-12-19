@@ -12,7 +12,7 @@ let handleSucess = function (response) {
             <div id="details">
                 <h3>${messages.name}</h3>
                 <p>${messages.number}</p>
-                <p>${messages.firstLine}</p>            
+                <p class="message">${messages.firstLine}</p>            
               </div>  
             </div>
             <div id="time">
@@ -20,7 +20,17 @@ let handleSucess = function (response) {
                 <span id = "span">${messages.numbUnread}</span>
             </div>
         </li>`
+
+        // if (messages.numbUnread === 0) {
+        //     document.getElementById('span').style.display = "none";
+        // }
+        
+        // if (messages.firstLine.length >= 15) {
+        //     document.querySelector('.message').IndexOf(15) += "...";
+        // }
     }
+
+    
 }
 
 let handleError = function (error) {
